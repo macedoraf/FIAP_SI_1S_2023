@@ -1,0 +1,73 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+import java.util.Scanner
+
+fun main() {
+ exec1()
+ exec2(inteiro = 100)
+ exec4(5.5, 6.7, 10.0, 4.4)
+ println("2 metros = ${exec5(2.0)}")
+ println("Raio = 2.0 Area = ${exec6(2.0)}")
+ println("Area do quadrado de lado 5 * 2 = ${exec7(5.0)}")
+}
+
+fun exec1() {
+    println("Ola mundo")
+}
+
+fun exec2(inteiro: Int) {
+    println("O número informado foi $inteiro")
+}
+
+fun exec3(inteiro: Int) {
+    println("O número informado foi $inteiro")
+}
+
+
+fun exec3(arg0: Int, arg1: Int) {
+    val resultado = arg0 + arg1
+    println("$resultado")
+}
+
+//Faça uma Programa que peça as 4 notas bimestrais e mostre a média.
+//
+fun exec4(nota01: Double, nota02: Double, nota03: Double, nota04: Double) {
+    var sum = 0.0
+    val listOfNotas = listOf(nota01, nota02, nota03, nota04)
+    
+    listOfNotas.forEach { sum += it}
+    val media = sum / listOfNotas.size
+    
+    println("media = ${media}")
+}
+
+//Faça uma Programa que converta metros para centímetros.
+fun exec5(metros: Double): Double {
+    return metros * 100
+}
+
+//Faça um Programa que peça o raio de um círculo, calcule e mostre sua área
+fun exec6(raio: Double): Double {
+    val pi = Math.PI
+   	
+    val areaCirculo =  pi * (raio * raio)
+    return areaCirculo
+}
+
+//Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+fun exec7(lateral: Double): Double {
+    val area = lateral * lateral
+    return area * 2
+}
+
+//Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+fun exec8(lateral: Double): Double {
+    val area = lateral * lateral
+    return area * 2
+}
+
+
+
